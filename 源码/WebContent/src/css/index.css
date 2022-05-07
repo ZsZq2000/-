@@ -1,0 +1,350 @@
+/*鏍峰紡閲嶇疆*/
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select{
+	padding: 0;
+	margin: 0;
+	font-family: arial; /*鑻辨枃鏂囦綋璁剧疆*/
+}
+li{ list-style: none; }
+img{ border: none; }
+a{ 
+	text-decoration: none; /*鍘婚櫎涓嬪垝绾�*/ 
+	color: #999
+}
+a:hover{ text-decoration: underline; }
+em{
+	font-style: normal;
+}
+p{
+	display: inline-block;
+}
+span{
+	font-family: arial;
+}
+
+/*姝ｆ枃閮ㄥ垎*/
+#room{
+	width: 1263px;
+	/*height: 200px;*/
+	overflow-x: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	overflow-y: hidden;
+}
+
+/*鐧诲綍娉ㄥ唽妯″潡*/
+#top{
+	width: 1263px;
+	height: 32px;
+	background: #f2f2f2;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 12px;
+	font-family: arial;
+}
+#top .welcome{
+	width: 218px;
+	height: 32px;
+	margin-left: 4px; 
+	color: #999;
+	line-height: 32px;
+}
+#top .welcome a{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#top .welcome a:hover{
+	text-decoration: none;
+	line-height: 30px;
+	color: red;
+}
+
+/*璐墿杞﹀拰鑱旂郴鏂瑰紡妯″潡*/
+#top .adver{
+	width: 300px;
+	height: 32px;
+	margin-right: 4px;
+	color: #999;
+	line-height: 32px;
+	float: right;
+}
+#top .adver li{
+	height: 32px;
+	margin-right: 4px;
+	color: #999;
+	line-height: 32px;
+	float: right;
+}
+#top .adver .image{
+	width: 15px;
+}
+#top .adver .image img{
+	width: 100%;
+	height: 100%
+}
+#top .adver a{
+	height: 32px;
+	padding-right: 20px;
+}
+#top .adver li .phone{
+	padding-right: 2px;
+}
+#top .adver a:hover{
+	color: #FF0036;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+/*search style*/
+.search{
+	margin-top: 5px;
+}
+.search .keyword{
+	margin-top: 30px;
+	text-align: center;
+}
+.search .keyword form div{
+	display: inline-block;
+}
+.search .keyword form .inpwrapper input{
+	width: 530px;
+	height: 26px;
+	margin-top: 4px;
+	font-family: arial;
+	font-size: 12px;
+	color: #aab2bd;
+	border: 0px;
+	outline: none; 
+}
+/*.search .keyword form .inpwrapper input::-webkit-input-placeholder {
+	color: #aab2bd;
+    font-size: 12px;
+}*/
+.search .keyword  form .inpwrapper{
+	width: 539px;
+	height: 34px;
+	border: 1px solid #FF0036;
+	vertical-align: top;
+}
+.search .keyword  form .btnwrapper{
+	margin-left: -5px;
+}
+.search .keyword .btnwrapper input{
+	width: 100px;
+	height: 36px;
+	background-color: #FF0036;
+	cursor: pointer;
+	color: #fff;
+	font-size: 15px;
+	border:none;
+}
+
+/*鍔熻兘妗�*/
+#nav{
+	margin-top: 20px;
+	width: 100%;
+	height: 40px;
+	border-bottom: 2px solid #ff2832;
+	line-height: 40px;
+}
+#nav, #nav div, #nav ul, #nav li{
+	display: inline-block;
+}
+#nav .tap{
+	margin-left: 20px;
+	margin-right: 10px;
+	height: 40px;
+	width: 100px;
+	color: white;
+	background: #ff2832;
+	text-align:center;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%; 
+}
+#nav .tap:hover{
+	height: 39px;
+	width: 98px;
+	color: #ff2832;
+	background: white;
+	border-top: 1px solid #ff2832;
+	border-left: 1px solid #ff2832;
+	border-right: 1px solid #ff2832;
+}
+#nav li{
+	width: 90px;
+	height: 39px;
+	margin-right: 1px;
+	margin-left: 1px;
+	border-top-left-radius: 10%;
+	border-top-right-radius: 10%;
+	border-top: 1px solid #FF0036;
+	border-left: 1px solid #FF0036;
+	border-right: 1px solid #FF0036;
+	text-align: center;
+}
+#nav li .tap1:hover{
+	color: #ff2832;
+}
+#nav .item .preread{
+	height: 41px;
+	width: 90px;
+	color: #ff2832;
+	background: #fafafa;
+	border-top: 1px solid #ff2832;
+	border-left: 1px solid #ff2832;
+	border-right: 1px solid #ff2832;
+}
+
+/*鍐呭鍖�*/
+#content{
+	width: 1263px;
+	height: 798px;
+	text-align: center;
+}
+#content ul{
+	display: inline-block;
+	width: 809px; /*姣弆i涔嬮棿绾�7px鐨勯棿闅�*/
+	height: 266px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	background: #fafafa;
+}
+#content li{
+	width: 150px;
+	height: 250px;
+	margin-right: 47px;
+	margin-bottom: 16px;
+	display: inline-block;
+}
+#content img{
+	width: 150px;
+	height: 150px;
+	display: inline-block; 
+}
+#content .display1 li div, #content .display1 li a{
+	display: inline-block;
+	vertical-align:top;
+}
+#content .display1 .tap1{
+	width: 110px;
+	height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 12px;
+	line-height: 25px;
+	color: black;
+}
+#content .display1 .tap1:hover{
+	color: #ff0036;
+}
+#content .display1 .tap2{
+	width: 110px;
+	height: 24px;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #aaa;
+	line-height: 24px;
+	font-weight: bold;
+}
+#content .display1 .tap3{
+	width: 110px;
+	height: 36px;
+	margin-right: 20px;
+	margin-left: 20px;
+	text-align: center;
+}
+#content .display1 .now{
+	width: 48px;
+	height: 25px;
+	font-size: 13px;
+	color: #c30;
+	line-height: 25px;
+	font-weight: bold;
+	float: left;
+	text-align: left;
+	margin-right: 16px;
+}
+#content .display1 .past{ 
+	width: 46px;
+	height: 25px;
+	font-size: 13px;
+	line-height: 25px;
+	float: left;
+	text-decoration: line-through;
+	text-align: left;
+}
+#content .display1 a,
+#content .display1 div,
+#content .display1 span{
+	overflow: hidden;
+}
+/*椤佃剼*/
+#footer{
+	width: 1263px;
+	height: 150px;
+	border-top: 1px solid #ff2832;
+	background: #f4f4f4;
+	text-align: center;
+}
+#footer .content{
+	width: 800px;
+	height: 150px;
+	display: inline-block;
+	margin-top: 25px;
+}
+#footer .content .model{
+	width: 165px;
+	height: 90px;
+	margin-left: 35px;
+	display: inline-block;
+	float: left;
+}
+#footer .content .model h4{
+	width: 165px;
+	height: 48px;
+}/*h4涓巙l涔嬮棿鏃犲浐瀹氶棿闅�*/
+#footer .content .model h4 div{
+	width: 32px;
+	height: 48px;
+	display: inline-block;
+	float: left;
+}
+#footer .content .model h4 div img{
+	width: 32px;
+	height: 48px;
+}
+#footer .content .model h4 span{
+	margin-top: 12px;
+	margin-left: 10px;
+	width: 100px;
+	height: 24px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+	vertical-align: top;
+	color: #3C3C3C;
+	float: left;
+}
+#footer .content .model ul{
+	float: left;
+	width: 165px;
+	height: 42px;
+	vertical-align: top;
+}
+#footer .content .model ul li{
+	height: 21px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 21px;
+	vertical-align: top;
+	text-align: left;
+	color: #999;
+	float: left;
+}
+#footer .content .model ul .tap1{
+	width: 48px;
+	margin-right: 10px;
+}
+#footer .content .model ul .tap2{
+	width: 72px;
+	margin-right: 10px;
+}

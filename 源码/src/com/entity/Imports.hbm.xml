@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Imports" table="T_Imports" catalog="projectdb">
+		<composite-id name="key">
+			<key-property name="Iusername" length="20" type="java.lang.String"/>
+			<key-property name="Inumber" length="13" type="java.lang.String"/>
+			<generator class="assigned"/> 
+		</composite-id>
+		<many-to-one name="shops" class="com.entity.Shops">
+			<column name="Susername" not-null="true"/>
+		</many-to-one>
+		<many-to-one name="books" class="com.entity.Books">
+			<column name="Bnumber" not-null="true"/>
+		</many-to-one>
+		<property name="Idiscount" type="java.lang.Double">
+			<column name="Idiscount" not-null="true"/>
+		</property>
+		<property name="Inumgoods" type="java.lang.Integer">
+			<column name="Inumgoods" not-null="true"/>
+		</property>
+	</class>
+</hibernate-mapping>

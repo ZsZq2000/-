@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Books" table="T_Books" catalog="projectdb">
+		<id name="Bnumber" type="java.lang.String">
+			<column name="Bnumber" length="13"/>
+			<generator class="assigned"/> 
+		</id>
+		<property name="Bname" type="java.lang.String">
+			<column name="Bname" length="30" not-null="true"/>
+		</property>
+		<property name="Bwriter" type="java.lang.String">
+			<column name="Bwriter" length="20"/>
+		</property>
+		<property name="Bpublish" type="java.lang.String">
+			<column name="Bpublish" length="30"/>
+		</property>
+		<property name="Bprice" type="java.lang.Double">
+			<column name="Bprice" not-null="true"/>
+		</property>
+	</class>
+</hibernate-mapping>

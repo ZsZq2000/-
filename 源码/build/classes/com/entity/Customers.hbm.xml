@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Customers" table="T_Customers" catalog="projectdb">
+		<id name="Cusername" type="java.lang.String">
+			<column name="Cusername" length="20"/>
+			<generator class="assigned"/> 
+		</id>
+		<property name="Cname" type="java.lang.String">
+			<column name="Cname" length="20" not-null="true"/>
+		</property>
+		<property name="Cpassword" type="java.lang.String">
+			<column name="Cpassword" length="20" default="123456"/>
+		</property>
+		<property name="Csex" type="java.lang.String">
+			<column name="Csex" length="2"/>
+		</property>
+		<property name="Cphone" type="java.lang.String">
+			<column name="Cphone" length="11" not-null="true"/>
+		</property>
+		<property name="Clocal" type="java.lang.String">
+			<column name="Clocal" length="50" not-null="true"/>
+		</property>
+		<property name="Cvalue" type="java.lang.Integer">
+			<column name="Cvalue" default="0"/>
+		</property>
+	</class>
+</hibernate-mapping>

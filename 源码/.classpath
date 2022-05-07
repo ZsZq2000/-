@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/eclipse">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v9.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/byte-buddy-1.8.17.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/classmate-1.3.4.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/hibernate-commons-annotations-5.0.4.Final.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/hibernate-core-5.3.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/jandex-2.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/javassist-3.23.1-GA.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/commons-fileupload-1.3.3.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/freemarker-2.3.26-incubating.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/javassist-3.20.0-GA.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/log4j-api-2.10.0.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/ognl-3.1.15.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/struts2-core-2.5.17.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-beans-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-context-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-core-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-expression-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-jdbc-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-orm-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-tx-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/struts2-convention-plugin-2.5.17.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-aop-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/mchange-commons-java-0.2.11.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/hbn/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/spr/spring-web-5.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/struts2-spring-plugin-2.5.17.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/asm-5.2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/asm-commons-5.2.jar"/>
+	<classpathentry kind="lib" path="D:/JavaEE/jar/asm-tree-5.2.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

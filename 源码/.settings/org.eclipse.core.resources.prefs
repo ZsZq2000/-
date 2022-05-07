@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebContent/BookMessage.jsp=UTF-8
+encoding//WebContent/BookSearch.jsp=UTF-8
+encoding//WebContent/BookSearchFail.jsp=UTF-8
+encoding//WebContent/BuyBook.jsp=UTF-8
+encoding//WebContent/CustomerMessage.jsp=UTF-8
+encoding//WebContent/CustomerOutside.jsp=UTF-8
+encoding//WebContent/CustomerRegister.jsp=UTF-8
+encoding//WebContent/InsertBook.jsp=UTF-8
+encoding//WebContent/OrderSearch.jsp=UTF-8
+encoding//WebContent/PaySuccess.jsp=UTF-8
+encoding//WebContent/PreBuySuccess.jsp=UTF-8
+encoding//WebContent/ShopMessage.jsp=UTF-8
+encoding//WebContent/ShopRegister.jsp=UTF-8
+encoding//WebContent/src/css/index.css=UTF-8
+encoding//WebContent/src/css/login.css=UTF-8
+encoding//src/com/dao/OrderDao.java=UTF-8

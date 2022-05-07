@@ -1,0 +1,109 @@
+/*样式重置*/
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select{
+	padding: 0;
+	margin: 0;
+	font-family: arial; /*英文文体设置*/
+}
+li{ list-style: none; }
+img{ border: none; }
+a{ 
+	text-decoration: none; /*去除下划线*/ 
+	color: #999
+}
+a:hover{ text-decoration: underline; }
+em{
+	font-style: normal;
+}
+p{
+	display: inline-block;
+}
+span{
+	font-family: arial;
+}
+input{
+	outline:none;
+}
+
+/*正文部分*/
+#room{
+	width: 1263px;
+	height: 768px;
+	background-image: url(../img/login.jpg);
+	overflow-x: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	overflow-y: hidden;
+}
+
+#box{
+	width: 955px;
+	height: 451px;
+	margin-top: 80px; 
+}
+
+p{
+	width: 955px;
+	height: 54px;
+	color: #353535;
+	font-size: 36px;
+	text-align: center;
+}
+
+#error{
+	width: 304px;
+	height: 30px;
+	color: red;
+	text-align: left;
+	font-size: 13px;
+	line-height: 30px;
+}
+
+.content{
+	display: inline-block;
+	width: 478px;
+	height: 226px;
+	border: 1px solid #ebebeb;
+	background: #fafafa;
+}
+
+form{
+	width: 478px;
+	height: 196px;
+}
+
+.inputcontent{
+	display: inline-block;
+	width: 304px;
+	height: 36px;
+	margin-top: 16px;
+	border:solid 1px #ddd;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.text{
+	width: 300px;
+	height: 36px;
+	margin-left: 2px;
+	font-family: arial;
+	font-size: 13px;
+	line-height: 36px;
+	border:hidden;
+	box-shadow:0 0 0 60px #fff inset;
+}
+
+.button{
+	display: inline-block;
+	width: 304px;
+	height: 34px;
+	margin-top: 16px;
+	background-color: #3385ff;
+	border: 2px solid #2d78f4;
+	color:white;
+	border-radius: 5px;
+}
+
+.button:hover{
+	background-color: #317ef3;
+	border: 2px solid #2868c8;
+}

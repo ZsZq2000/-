@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.entity.Orders" table="T_Orders" catalog="projectdb">
+		<id name="Onumber" type="java.lang.Long">
+			<column name="Onumber"/>
+			<generator class="native"/>
+		</id>
+		<many-to-one name="customers" class="com.entity.Customers">
+			<column name="Cusername" not-null="true"/>
+		</many-to-one>
+		<many-to-one name="shops" class="com.entity.Shops">
+			<column name="Susername" not-null="true"/>
+		</many-to-one>
+		<many-to-one name="books" class="com.entity.Books">
+			<column name="Bnumber" not-null="true"/>
+		</many-to-one>
+		<property name="Olocal" type="java.lang.String">
+			<column name="Sname" length="50" not-null="true"/>
+		</property>
+		<property name="Otime" type="java.sql.Timestamp">
+			<column name="Otime" not-null="true"/>
+		</property>
+		<property name="Oquantity" type="java.lang.Integer">
+			<column name="Oquantity" not-null="true"/>
+		</property>
+		<property name="Osumprice" type="java.lang.Double">
+			<column name="Osumprice"/>
+		</property>
+		<property name="Oremark" type="java.lang.String">
+			<column name="Oremark" length="30"/>
+		</property>
+		<property name="Opay" type="java.lang.Boolean">
+			<column name="Opay" sql-type="Boolean"/>
+		</property>
+		<property name="Oaccept" type="java.lang.Boolean">
+			<column name="Oaccept" sql-type="Boolean"/>
+		</property>
+		<property name="Oreturn" type="java.lang.Boolean">
+			<column name="Oreturn" sql-type="Boolean"/>
+		</property>
+		<property name="Oreason" type="java.lang.String">
+			<column name="Oreason" length="30"/>
+		</property>
+		<property name="Ocancel" type="java.lang.Boolean">
+			<column name="Ocancel" sql-type="Boolean"/>
+		</property>
+		<property name="Odiscount" type="java.lang.Boolean">
+			<column name="Odiscount" sql-type="Boolean"/>
+		</property>
+		<property name="Ogetvalue" type="java.lang.Integer">
+			<column name="Ogetvalue"/>
+		</property>
+	</class>
+</hibernate-mapping>

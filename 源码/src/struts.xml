@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.dewMode" value="true"/>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.objectFactory" value="spring"/>
+	<constant name="struts.dewMode" value="true"/>
+	<constant name="struts.ui.theme" value="simple" />  
+	<constant name="struts.ui.templateDir" value="template" />  
+	<constant name="struts.objectFactory.spring.autoWire" value="name"/>
+	<package name="Struts2_OGNL_DEMO" extends="struts-default">
+		<action name="CustomerRegister" class="com.action.CustomerAction" method="customerRegister">
+			<result name="success">/index.jsp</result>
+			<result name="error">/CustomerRegister.jsp</result>
+		</action>
+		<action name="CustomerLogin" class="com.action.CustomerAction" method="customerLogin">
+			<result name="success">/index.jsp</result>
+			<result name="error">/CustomerLogin.jsp</result>
+		</action>
+		<action name="CustomerOutside" class="com.action.CustomerAction" method="customerOutside">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="ViewCustomerMessage" class="com.action.CustomerAction" method="viewCustomerMessage">
+			<result name="success">/CustomerMessage.jsp</result>
+		</action>
+		<action name="CustomerPassword"  class="com.action.CustomerAction" method="customerPassword">
+			<result name="success">/CustomerMessage.jsp</result>
+		</action>
+		<action name="CustomerPhone"  class="com.action.CustomerAction" method="customerPhone">
+			<result name="success">/CustomerMessage.jsp</result>
+			<result name="error">/CustomerMessage.jsp</result>
+		</action>
+		<action name="CustomerLocal"  class="com.action.CustomerAction" method="customerLocal">
+			<result name="success">/CustomerMessage.jsp</result>
+		</action>
+		<action name="ShopRegister" class="com.action.ShopAction" method="shopRegister">
+			<result name="success">/ShopGuide.jsp</result>
+			<result name="error">/ShopRegister.jsp</result>
+		</action>
+		<action name="ShopLogin" class="com.action.ShopAction" method="shopLogin">
+			<result name="success">/ShopGuide.jsp</result>
+			<result name="error">/ShopLogin.jsp</result>
+		</action>
+		<action name="ShopOutside"  class="com.action.ShopAction" method="shopOutside">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="ViewShopMessage" class="com.action.ShopAction" method="viewShopMessage">
+			<result name="success">/ShopMessage.jsp</result>
+		</action>
+		<action name="ShopPassword"  class="com.action.ShopAction" method="shopPassword">
+			<result name="success">/ShopMessage.jsp</result>
+		</action>
+		<action name="ShopPhone"  class="com.action.ShopAction" method="shopPhone">
+			<result name="success">/ShopMessage.jsp</result>
+			<result name="error">/ShopMessage.jsp</result>
+		</action>
+		<action name="ShopShopname"  class="com.action.ShopAction" method="shopShopname">
+			<result name="success">/ShopMessage.jsp</result>
+		</action>
+		<action name="ShopLocal"  class="com.action.ShopAction" method="shopLocal">
+			<result name="success">/ShopMessage.jsp</result>
+		</action>
+		<action name="BookSearch" class="com.action.BookAction" method="searchBooks">
+			<result name="success">/BookSearch.jsp</result>
+			<result name="error">/BookSearchFail.jsp</result>
+		</action>
+		<action name="BookMessage" class="com.action.BookAction" method="bookMessage">
+			<result name="success">/BookMessage.jsp</result>
+		</action>
+		<action name="InsertBook" class="com.action.BookAction" method="insertBook">
+			<result name="success">/InsertBookSuccess.jsp</result>
+			<result name="error">/InsertBook.jsp</result>
+		</action>
+		<action name="BookBuy" class="com.action.OrderAction" method="bookBuy">
+			<result name="success">/PreBuySuccess.jsp</result>
+			<result name="error">/BookSearch.jsp</result>
+			<result name="nologin">/CustomerLogin.jsp</result>
+		</action>
+		<action name="CheckCart" class="com.action.OrderAction" method="checkCart">
+			<result name="success">/ShopCart.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="AddQuantity" class="com.action.OrderAction" method="addQuantity">
+			<result name="success">/ShopCart.jsp</result>
+			<result name="error">/ShopCart.jsp</result>
+		</action>
+		<action name="SubQuantity" class="com.action.OrderAction" method="subQuantity">
+			<result name="success">/ShopCart.jsp</result>
+		</action>
+		<action name="PurchaseOrder" class="com.action.OrderAction" method="purchaseOrder">
+			<result name="success">/BuyBook.jsp</result>
+		</action>
+		<action name="BuyCertain" class="com.action.OrderAction" method="buyCertain">
+			<result name="success">/PaySuccess.jsp</result>
+			<result name="error">/BuyBook.jsp</result>
+		</action>
+		<action name="CheckOrder" class="com.action.OrderAction" method="checkOrder">
+			<result name="success">/OrderSearch.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		<action name="SubmitReturn" class="com.action.OrderAction" method="submitReturn">
+			<result name="success">/ReturnReason.jsp</result>
+		</action>
+		<action name="ReturnReason" class="com.action.OrderAction" method="returnReason">
+			<result name="success">/ReturnSubmitSuccess.jsp</result>
+		</action>
+		<action name="DealOrder" class="com.action.OrderAction" method="dealOrder">
+			<result name="success">/OrderDeal.jsp</result>
+			<result name="error">/ShopGuide.jsp</result>
+		</action>
+		<action name="AcceptOrder" class="com.action.OrderAction" method="acceptOrder">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="ReturnOrder" class="com.action.OrderAction" method="returnOrder">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="RefuseOrder" class="com.action.OrderAction" method="refuseOrder">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="ShowTable" class="com.action.OrderAction" method="showTable">
+			<result name="success">/TableItem.jsp</result>
+			<result name="error">/TableItem.jsp</result>
+		</action>
+		<action name="ReturnBack" class="com.action.OrderAction" method="returnBack">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="BookManage" class="com.action.ImportAction" method="bookManage">
+			<result name="success">/BookManage.jsp</result>
+		</action>
+		<action name="ChangeBook" class="com.action.ImportAction" method="changeBook">
+			<result name="success">/BookChange.jsp</result>
+		</action>
+		<action name="ChangeDicount" class="com.action.ImportAction" method="changeDicount">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="ChangeNumgoods" class="com.action.ImportAction" method="changeNumgoods">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="DeleteBook" class="com.action.ImportAction" method="deleteBook">
+			<result name="success">/ShopGuide.jsp</result>
+		</action>
+		<action name="AddBook" class="com.action.ImportAction" method="addBook">
+			<result name="success">/ShopGuide.jsp</result>
+			<result name="fail">/InsertBook.jsp</result>
+		</action>
+	</package>
+</struts>
